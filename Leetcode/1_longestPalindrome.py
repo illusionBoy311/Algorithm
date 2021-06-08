@@ -3,6 +3,9 @@
 # @Author  : Hu-y
 # @File    : 1_longestPalindrome.py
 # 思路:对于一个子串而言,如果它是回文,且长度大于2,那么去掉首尾的两个字母之后,它仍然是个回文串。
+import string as str
+
+
 class Solution:
     # 动态规划的状态转移方程 P(i,j)表示字符串s的第i到j字母字母组成的字符串 状态转移方程: P(i,j) = P(i+1,j-1)^(Si==Sj)
     # 即为s[i+1:j-1]是回文串,并且s的第i和j个字母相同时,s[i:j]才会是回文串。
@@ -49,7 +52,7 @@ class Solution:
 
 if __name__ == "__main__":
     s = Solution()
-    str = "babad"
+    str = "cbbd"
     result = s.longestPalindrome(str)
     print(result)
 
