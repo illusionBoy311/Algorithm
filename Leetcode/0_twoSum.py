@@ -46,7 +46,7 @@ class Solution:
 
 if __name__ == '__main__':
     nums = [0, 0, 4, 15]
-    target = 0
+    target = 19
     s = Solution()
     result = s.twoSum(nums, target)
     result1 = s.twoSum1(nums, target)
