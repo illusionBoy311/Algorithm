@@ -21,7 +21,7 @@ class Solution:
         Args:
         :param nums: input array
         Return:
-          a list such as [[a,b,c],[a1,b1,c1]]
+          a list such as [(a,b,c),(a1,b1,c1)]
         """
         # 1.临界条件的判断
         if len(nums) < 3:
