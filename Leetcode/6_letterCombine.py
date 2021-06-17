@@ -2,6 +2,7 @@
 # @Time    : 2021/6/16 18:05
 # @Author  : Hu-y
 # @File    : 6_letterCombine.py
+# 电话号码的字母组合
 from typing import List
 
 
@@ -31,7 +32,6 @@ class Solution:
                     backtrack(index + 1)
                     combination.pop()
 
-
         combination = list()
         combinations = list()
         backtrack(0)
@@ -42,4 +42,4 @@ if __name__ == '__main__':
     digits = "23"
     s = Solution()
     result = s.letterCombinations(digits)
-    print(digits+"的电话号码字母组合结果为:", result)
+    print(digits + "的电话号码字母组合结果为:", result)
